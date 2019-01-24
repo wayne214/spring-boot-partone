@@ -1,6 +1,9 @@
 package com.wayne.partone.partone.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.HandlerInterceptor;
 
 @RestController
 @RequestMapping
@@ -36,5 +39,18 @@ public class HelloWorldController {
     public String hello2(@RequestParam(value = "name", defaultValue = "wayne214", required = false) String name) {
         return "Hello " + name;
     }
+
+    // logger 日志工具
+    public static Logger log = LoggerFactory.getLogger(HelloWorldController.class);
+    /**
+     * POST方式传递参数
+     * 使用Postman工具进行测试
+     * */
+    @PostMapping("/user")
+    public String addUser(@RequestParam("name") String name, @RequestParam("age") Integer age) {
+        log.info(name + "," + age);
+        return "name:"+name+"\nage:"+age;
+    }
+
 
 }
