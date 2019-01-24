@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.Date;
 import java.util.Map;
 
-@Controller
+//@Controller
 public class indexController {
 //    @RequestMapping(value = "/index",method = RequestMethod.GET)
     @Value("${application.hello:Hello Wayne}")
