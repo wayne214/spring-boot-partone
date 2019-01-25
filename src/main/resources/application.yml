@@ -1,0 +1,5 @@
+swagger:
+  title: Springboot
+  description: springboot 入门
+  version: 1.0.0
+  url: http://accp.site

@@ -1,5 +1,8 @@
 package com.wayne.partone.partone.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -7,9 +10,11 @@ import org.springframework.web.servlet.HandlerInterceptor;
 
 @RestController
 @RequestMapping
+@Api(value = "用户模块")
 public class HelloWorldController {
 //    @RequestMapping(value = "/index",method = RequestMethod.GET)
     @GetMapping("/hello")
+    @ApiOperation(value = "测试Swagger")
     public String index() {
         return "Hello World!";
     }
@@ -19,6 +24,8 @@ public class HelloWorldController {
      *
      */
     @GetMapping("/hello/{name}")
+    @ApiOperation(value = "测试api传递参数")
+    @ApiImplicitParam(value = "用户的name", paramType= "path")
     public String hello(@PathVariable("name") String name) {
         return "Hello " + name;
     }
