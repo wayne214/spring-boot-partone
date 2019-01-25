@@ -15,5 +15,6 @@
 - 搭建spring开发环境，使用IntelliJ IDEA构建spring boot项目
 - 创建spring boot项目，say Hello world
 - spring boot支持jsp开发
+- 自由更换banner文件
 
 
