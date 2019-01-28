@@ -43,6 +43,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!--热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-Devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!--swagger插件-->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -96,6 +103,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
             </plugin>
 
             <!-- Docker maven plugin -->
