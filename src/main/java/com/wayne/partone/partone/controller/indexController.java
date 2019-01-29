@@ -24,6 +24,12 @@ public class indexController {
         return "hello";
     }
 
+    @RequestMapping("/string")
+    public String string(ModelMap map) {
+        map.addAttribute("userName", "wayne");
+        return "string";
+    }
+
     /**
      * 默认页<br/>
      * @RequestMapping("/") 和 @RequestMapping 是有区别的

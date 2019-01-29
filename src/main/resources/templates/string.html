@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>String拼接</title>
+</head>
+<body>
+    <div>
+        <h1>text</h1>
+        <p th:text="${userName}">wayne</p>
+        <span th:text="'welcome to our app,' + ${userName}+ '!'"></span>
+        <br/>
+        <span th:text="|welcom to our app, ${userName}!|"></span>
+    </div>
+</body>
+</html>
