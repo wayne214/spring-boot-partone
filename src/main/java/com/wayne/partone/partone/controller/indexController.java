@@ -58,6 +58,14 @@ public class indexController {
 
     }
 
+    @RequestMapping("/url")
+    public String url(ModelMap map) {
+        map.addAttribute("type", "link");
+        map.addAttribute("pageId", "springcloud/2017/09/11/");
+        map.addAttribute("img", "http://www.ityouknow.com/assets/images/neo.jpg");
+        return "url";
+    }
+
     /**
      * 默认页<br/>
      * @RequestMapping("/") 和 @RequestMapping 是有区别的
