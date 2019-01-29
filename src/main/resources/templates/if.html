@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--所有使用 Thymeleaf 的页面必须在 HTML 标签声明 Thymeleaf：-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<a> 标签只有在 th:if 中条件成立时才显示：-->
+<!--th:unless 与 th:if 恰好相反，只有表达式中的条件不成立，才会显示其内容。-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Example If/Unless</title>
+</head>
+<body>
+    <h1>If/Unless</h1>
+    <a th:if="${flag == 'yes'}" th:href="@{https://wayne214.github.io}">home</a>
+    <br/>
+    <a th:unless="${flag != 'no'}" th:href="@{https://www.baidu.com}">wayne214</a>
+</body>
+</html>

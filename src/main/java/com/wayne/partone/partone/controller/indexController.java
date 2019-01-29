@@ -30,6 +30,12 @@ public class indexController {
         return "string";
     }
 
+    @RequestMapping("/if")
+    public String ifunless(ModelMap map) {
+        map.addAttribute("flag", "yes");
+        return "if";
+    }
+
     /**
      * 默认页<br/>
      * @RequestMapping("/") 和 @RequestMapping 是有区别的
