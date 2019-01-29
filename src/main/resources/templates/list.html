@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Example For</title>
+</head>
+<body>
+    <h1>for 循环</h1>
+    <table>
+        <tr th:each="user, iterStat: ${users}">
+            <td th:text="${user.name}">wayne</td>
+            <td th:text="${user.age}">2</td>
+            <td th:text="${user.pass}">123</td>
+            <td th:text="${iterStat.index}">index</td>
+        </tr>
+
+    </table>
+</body>
+</html>
