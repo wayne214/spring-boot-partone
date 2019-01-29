@@ -6,6 +6,11 @@
 - MySQL数据库
 - Maven
 
+### 2018-01-29
+- Filter过滤器
+- JSR规范数据校验，Hibernate Validator提供了JSR规范中所有内置
+约束注解
+
 ### 2019-01-28
 - 热部署devtools
 - test单元测试
