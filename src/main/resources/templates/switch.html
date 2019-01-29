@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+<div>
+    <div th:switch="${car}">
+        <p th:case="'aodi'">这是奥迪</p>
+        <p th:case="'benci'">这是奔驰</p>
+        <p th:case="*">这是豪车</p>
+
+    </div>
+
+</div>
 
 </body>
 </html>

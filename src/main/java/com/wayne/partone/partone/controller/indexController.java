@@ -27,18 +27,25 @@ public class indexController {
         return "hello";
     }
 
+    /**
+     * Thymeleaf模板引擎--字符串拼接
+     * */
     @RequestMapping("/string")
     public String string(ModelMap map) {
         map.addAttribute("userName", "wayne");
         return "string";
     }
-
+    /**
+     * Thymeleaf模板引擎--If/Unless判断
+     * */
     @RequestMapping("/if")
     public String ifunless(ModelMap map) {
         map.addAttribute("flag", "yes");
         return "if";
     }
-
+    /**
+     * Thymeleaf模板引擎--for循环
+     * */
     @RequestMapping("/list")
     public String list(ModelMap map) {
         map.addAttribute("users", getUserList());
@@ -57,7 +64,9 @@ public class indexController {
         return list;
 
     }
-
+    /**
+     * Thymeleaf模板引擎--URL
+     * */
     @RequestMapping("/url")
     public String url(ModelMap map) {
         map.addAttribute("type", "link");
@@ -65,6 +74,26 @@ public class indexController {
         map.addAttribute("img", "http://www.ityouknow.com/assets/images/neo.jpg");
         return "url";
     }
+    /**
+     * Thymeleaf模板引擎--三目运算符
+     * */
+    @RequestMapping("/eq")
+    public String eq(ModelMap map) {
+        map.addAttribute("name","wayne214");
+        map.addAttribute("age",18);
+        map.addAttribute("flag","yes");
+        return "eq";
+    }
+
+    /**
+     * Thymeleaf模板引擎--switch
+     * */
+    @RequestMapping("/switch")
+    public String switchcase(ModelMap map) {
+        map.addAttribute("car","aodi");
+        return "switch";
+    }
+
 
     /**
      * 默认页<br/>
