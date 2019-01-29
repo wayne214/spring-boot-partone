@@ -97,6 +97,12 @@
             <artifactId>druid</artifactId>
             <version>1.1.12</version>
         </dependency>
+        <!--模板引擎Thymeleaf-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

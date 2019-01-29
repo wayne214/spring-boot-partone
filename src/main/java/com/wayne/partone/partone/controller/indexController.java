@@ -2,6 +2,7 @@ package com.wayne.partone.partone.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,16 +12,17 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.Date;
 import java.util.Map;
 
-//@Controller
+@Controller
 public class indexController {
 //    @RequestMapping(value = "/index",method = RequestMethod.GET)
     @Value("${application.hello:Hello Wayne}")
     private String hello = "Hello Wayne";
 
-//    @GetMapping(value = "/index")
-//    public String index() {
-//        return "index";
-//    }
+    @GetMapping(value = "/")
+    public String index(ModelMap map) {
+        map.addAttribute("message", "http://www.ityouknow.com");
+        return "hello";
+    }
 
     /**
      * 默认页<br/>
