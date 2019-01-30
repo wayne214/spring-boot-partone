@@ -17,6 +17,16 @@
   - URL
   - 三目运算
   - Switch选择
+  - 高阶用法
+    - 内联[[]]
+    - 基本对象:
+      - ctx：上下文对象
+      - vars：上下文变量
+      - locale：区域对象
+      - request：（仅 Web 环境可用）HttpServletRequest 对象
+      - response：（仅 Web 环境可用）HttpServletResponse 对象
+      - session：（仅 Web 环境可用）HttpSession 对象
+      - servletContext：（仅 Web 环境可用）ServletContext 对象
 
 ### 2019-01-28
 - 热部署devtools
