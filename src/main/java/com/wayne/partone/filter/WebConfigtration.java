@@ -4,7 +4,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration 上传文件注释掉了
 public class WebConfigtration {
     @Bean
     public FilterRegistrationBean testFilterRegistration() {
