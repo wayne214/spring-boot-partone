@@ -107,6 +107,12 @@
             <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
         </dependency>
+        <!--fastdfs-client-java 为 FastDFS 的 Java 客户端，用来和 FastDFS 集群进行交互。-->
+        <dependency>
+            <groupId>net.oschina.zcx7878</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.27.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>

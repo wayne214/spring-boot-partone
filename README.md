@@ -9,6 +9,7 @@
 
 ### 2019-02-11
 - 使用 Spring Boot 和 Thymeleaf上传文件
+- FastDFS轻量级分布式文件系统
 
 ### 2019-01-29
 - Filter过滤器
