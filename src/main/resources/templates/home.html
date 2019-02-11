@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<!--<html>标签中添加 layout:decorate="layout" 使用 layout.html 页面的布局。-->
+<!--<div layout:fragment="content" >替换 layout.html 页面中的 content 代码片段。-->
+    <!--layout:decorator 标签在 3.0 过期，推荐使用新的标签 layout:decorate 进行页面布局。-->
+<!--采用页面模板布局的时候有两个关键设置：-->
+
+<!--在模板页面定义需要替换的部分 layout:fragment="content"；-->
+<!--在需要引入模板的页面头部写 layout:decorate="layout""，再修改 layout:fragment="content" 中的内容。-->
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorate="layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <h2>个性化内容</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: common_header(~{::title}, ~{::link})">
+    <meta charset="UTF-8">
+    <title>Fragment - Page</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/cs/fragment.css}">
+</head>
+<body>
+
+</body>
+</html>
+
+<!--片段表达式-->
+
+<!--Thymeleaf 3.0 引入了一种新型的表达式，作为一般 Thymeleaf 标准的语法表达式之一，它就是：片段表达式。-->
+
+<!--它使用类似 ~{commons::footer} 的语法，作用在 th:insert 和 th:replace 的内部。使用片段表达式支持引入片段的同时传参来构造目标页面，大大提高了代码复用的灵活度-->

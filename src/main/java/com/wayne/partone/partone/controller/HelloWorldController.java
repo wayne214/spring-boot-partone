@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-@RestController
-@RequestMapping
-@Api(value = "用户模块")
+//@RestController
+//@RequestMapping
+//@Api(value = "用户模块")
 public class HelloWorldController {
 //    @RequestMapping(value = "/index",method = RequestMethod.GET)
     @GetMapping("/hello")

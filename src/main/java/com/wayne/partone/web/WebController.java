@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import java.util.List;
 
-@RestController
+//@RestController
 public class WebController {
 
     @RequestMapping(name="/getUser", method =  RequestMethod.GET)
