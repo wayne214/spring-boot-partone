@@ -10,7 +10,7 @@
 - Filter过滤器
 - JSR规范数据校验，Hibernate Validator提供了JSR规范中所有内置
 约束注解
-- Thymeleaf模板引擎
+- ####Thymeleaf模板引擎
   - 字符串拼接
   - If/Unless判断
   - For循环
@@ -27,6 +27,8 @@
       - response：（仅 Web 环境可用）HttpServletResponse 对象
       - session：（仅 Web 环境可用）HttpSession 对象
       - servletContext：（仅 Web 环境可用）ServletContext 对象
+- ####Thymeleaf页面布局
+  - Thymeleaf 3.0 推荐使用 th:insert 替换 2.0 的 th:replace。
 
 ### 2019-01-28
 - 热部署devtools
